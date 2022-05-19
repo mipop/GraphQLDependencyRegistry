@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="12.9.0" />
+    <PackageReference Include="hotchocolate.execution" Version="12.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQLDependencyRegistry\GraphQLDependencyRegistry.csproj" />
+    <ProjectReference Include="..\SampleGraphQLModule\SampleGraphQLModule.csproj" />
+  </ItemGroup>
+
+</Project>
